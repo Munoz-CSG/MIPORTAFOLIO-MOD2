@@ -1,0 +1,215 @@
+/* SE EL COLOR DE FONDO Y GENERAL DEL BODY */
+body {
+    background-color: #16191d;
+}
+
+/* SE PERSONALIZA EL ESTILO Y VISUALIZACIÖN DEL LOGO EN LA BARRA DE NAVEGACIÖN */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* SE PERSONALIZA EL ESTILO DE LA BARRA DE NAVEGACIÖN SOBRE ENLACES */
+.navbar {
+    background-color: #16191d; 
+    padding: 13px 65px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fafafa;
+    transition: color 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #E84855;
+}
+
+/* SE PERSONALIZA EL ESTILO DEL NAVBAR Y NOMBRE Y APPELIDO */
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-wide {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.name, .surname {
+    display: flex;
+    margin: 0;
+}
+.name span, .surname span {
+    display: inline-block;
+    width: 18px; 
+    height: 18px; 
+    color: #fafafa; 
+    text-align: center;
+    line-height: 18px; 
+    margin: 0 1px; 
+    border-radius: 3px; 
+    font-size: 0.7rem; 
+}
+.surname span {
+    font-weight: bold; 
+    color: #E84855;
+}
+.brand-name .surname {
+    margin-top: -2px;
+}
+
+/* SE PERSONALIZA EL SCROLLBAR - EL SCROLLBAR OFICIAL DE CSS NO FUNCIONA AUN CON EDGE Y CHROME */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #16191d;
+}
+::-webkit-scrollbar-thumb {
+    background: #fafafa;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #E84855;
+}
+
+/* SE DEFINE QUE TODOS LOS H1, H3 y P DEL DOCUMENTO TENGAN EL MISMO COLOR */
+h1, p, h3 {
+    color: #fafafa; 
+}
+
+/* SE DEFINE QUE TODOS LOS H2 DEL DOCUMENTO TENGAN EL MISMO COLOR Y CENTRADO */
+h2 {
+    color: #fafafa;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* SE PERSONALIZA LA SOMBRA SOBRE EL CAMPPO SELECCIONADO EN DEL FORMULARIO  */
+.form-control:focus {
+    box-shadow: 0 0 0 0.02rem rgb(76, 79, 83);
+    border-color: #16191d;
+}
+
+/* SE PERSONALIZA QUE TODOS LOS HR TENGAN LA MISMA CONFIGURACIÓN */
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #fafafa;
+}
+
+/* SE PERSONALIZA LA BARRA DE NAVEGACIÓN PARA OCULTAR */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-color: #E84855;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+#linkContainer {
+    display: none;
+}
+.input-group {
+    display: flex;
+}
+.form-control {
+    flex: 1;
+}
+
+/* SE PERSONALIZA EL HOME COMO SECCIÓN HERO PARA OCUPAR TODA LA PANTALLA INCIALMENTE */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #16191d;
+    padding: 0 1rem;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* SE DEFINE ELE STILO DE GRID PARA HABILIDADES */
+#habilidaes {
+    display: grid;
+    place-items: center;
+}
+
+/* SE PERSONALIZA ESTILO Y LO QUE ESTA ADENTRO DEL SLIDER - PISTA, IMAGENES, ELEMENTOS */
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fafafa;
+    padding: 25px 0;
+}
+.slide-track {
+    display: flex;
+    width: calc(100px * 0);
+    height: 140px;
+    animation: scroll 17s linear infinite; 
+}
+.slide {
+    min-width: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.slide img {
+    width: 80%;
+    display: block;
+}
+
+/* SE ESTABLECE LA TRANSICIÓN DEL BUCLE INFINITO SEGÚN LA CANTIDAD DE IMAGENES */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 9));
+    }
+}
+
+/* SE ALINEA EL AREA DEL CARRUSEL */
+#carruselProyectos {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* SE PERSONALIZA EL CONTAINER DEL FORMULARIO */
+.form-container {
+    max-width: 80%;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #fafafa;
+    border-radius: 3px;
+}
+
+/* SE AGREGA RADIO A LAS IMAGENES DEL CARRUSEL */
+.rounded-carrusel {
+    border-radius: 3px; /* Ajusta el valor según tus necesidades */
+} 
+
+/* SE COLOREA EL ICONO DE COPYRIGHT */
+#copyright {
+    color: #E84855;
+}
+
+/*
+PALETA DE COLORES de MI PORTAFOLIO:
+
+#fafafa - GRIS CLARO
+#E84855 - ROJO CORAL
+#16191d - GRIS OSCURO
+*/
