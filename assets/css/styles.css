@@ -198,7 +198,7 @@ hr {
 
 /* SE AGREGA RADIO A LAS IMAGENES DEL CARRUSEL */
 .rounded-carrusel {
-    border-radius: 3px; /* Ajusta el valor según tus necesidades */
+    border-radius: 3px;
 } 
 
 /* SE COLOREA EL ICONO DE COPYRIGHT */
@@ -207,7 +207,7 @@ hr {
 }
 
 /*
-PALETA DE COLORES de MI PORTAFOLIO:
+ESTA ES LA PALETA DE COLORES de MI PORTAFOLIO
 
 #fafafa - GRIS CLARO
 #E84855 - ROJO CORAL
